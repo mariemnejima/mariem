@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+            /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="w3-display-container hidden-md hidden-lg">
+            <ul>
+                <li>
+                    <a href="#c">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#a"> Livres </a>
+                </li>
+                <li>
+                    <a href="file:///C:/Users/hhh/Desktop/v1/index.html">Emissions</a>
+                </li>
+                <li>
+                    <a href="#r">Articles</a>
+                </li>
+
+            </ul>
+            <img id="vv" src="salwa.jpg" style="width:106" height="200" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black"></div>
+            <div class="w3-container">
+                <center>
+                    <h1>SALWA BEN HADJ SALAH</h1>
+                    <H1 id="lect"> سلوى بن الحاج صالح</H1>
+                </center>
+                <i>
+                    <p>
+                        <h4> *MAITRE ASSISTANT à la faculté des lettres et des sciences humaines de Sousse </h4>
+                        <h4>*Professeur en Histoire Médiévale
+                            <br>
+                        </h4>
+                    </p>
+                </i>
+                <i>
+                    <h4>
+
+                        *Thèmes de recherche
+                        <br> Christianisme arabe, Les arabes avant l’Islam, femme arabe préislamique, femme chrétienne
+                    </h4>
+                </i>
+            </div>
+        </div>
+        <div style="position: fixed; width: 25%;" class="hidden-sm hidden-xs">
+            <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-display-container">
+                    <ul>
+                        <li>
+                            <a href="#c">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#a"> Livres </a>
+                        </li>
+                        <li>
+                            <a href="file:///C:/Users/hhh/Desktop/v1/index.html">Emissions</a>
+                        </li>
+                        <li>
+                            <a href="#r">Articles</a>
+                        </li>
+
+                    </ul>
+                    <img id="vv" src="salwa.jpg" style="width:106" height="200" alt="Avatar">
+                    <div class="w3-display-bottomleft w3-container w3-text-black"></div>
+                </div>
+                <div class="w3-container">
+                    <center>
+                        <h1>SALWA BEN HADJ SALAH</h1>
+                        <H1 id="lect"> سلوى بن الحاج صالح</H1>
+                    </center>
+                    <i>
+                        <p>
+                            <h4> *MAITRE ASSISTANT à la faculté des lettres et des sciences humaines de Sousse </h4>
+                            <h4>*Professeur en Histoire Médiévale
+                                <br>
+                            </h4>
+                        </p>
+                    </i>
+                    <i>
+                        <h4>
+
+                            *Thèmes de recherche
+                            <br> Christianisme arabe, Les arabes avant l’Islam, femme arabe préislamique, femme chrétienne
+                        </h4>
+                    </i>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-9 col-md-offset-3">
+
+                <!-- Page Container -->
+                <div class="w3-content">
+
+                    <!-- Right Column -->
+                    <div class="personal-container">
+
+                        <div class="w3-container w3-card w3-white w3-margin-bottom">
+                            <CENTER>
+                                <h3 id="c"> ABOUT</h3>
+                            </CENTER>
+                            <div class="slideshow-container">
+                                <center>
+                                    <div class="mySlides fade">
+                                        <br>
+                                        <br>
+                                        <img class="img-responsive" id="vs" src="salwa1.jpg">
+
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <br>
+                                        <br>
+                                        <img class="img-responsive" id="vb" src="salwa2.jpg">
+
+                                    </div>
+
+                                    <div class="mySlides fade">
+                                        <br>
+                                        <br>
+                                        <img class="img-responsive" id="vl" src="salwa4.jpg">
+
+                                    </div>
+                                </center>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div style="text-align:center">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="row">
+                                <div id="#" class="col-md-5 col-md-offset-1">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                                        <!-- Wrapper for slides -->
+
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="deth.jpg" alt="Los Angeles" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img id="image2" src="deth1.png" alt="Chicago" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="deth.png" alt="New york" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="de.PNG" alt="New york" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="d.PNG" alt="New york" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="d3.PNG" alt="New york" class="size-img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="det.PNG" alt="New york" class="size-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+
+                                    <a href="file:///C:/Users/hhh/Desktop/salwa/dassereenee_ya_khadigah.pdf">
+                                        <button id="a" type="button" style="margin-left:80px" class="btn btn-success">Lire le livre</button>
+                                    </a>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="el masihiya (1).PNG" alt="Los Angeles" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="elmasih.png" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="page1.png" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="page2.png" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="page4.png" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="page5.png" alt="New york" style="width:250px;">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="file:///C:/Users/hhh/Desktop/salwa/%D8%A7%D9%84%D8%A3%D8%B7%D8%B1%D9%88%D8%AD%D8%A9-%20%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%AD%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9.pdf">
+                                <button id="s" type="button" style=" margin-top: -100px" ; class="btn btn-success">Lire le livre</button>
+                            </a>
+
+                            <div class="row">
+
+                                <div class="col-md-5 col-md-offset-1">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="k.jpg" alt="Los Angeles" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="fah.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="fah1.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="fah3.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="k2.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="a1.jpg" alt="Los Angeles" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a2.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a3.jpg" alt="Chicago" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a4.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a5.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a6.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a7.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a8.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a9.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a10.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a11.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a12.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a13.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a14.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a15.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a16.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a17.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                            <div class="item">
+                                                <img src="a18.jpg" alt="New york" style="width:250px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+
+                                <!-- MAIN (Center website) -->
+                                <div class="main">
+                                    <div id="myBtnContainer">
+                                        <button class="btn active" onclick="filterSelection('all')"> articles all</button>
+                                    </div>
+
+                                    <!-- Portfolio Gallery Grid -->
+
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <img id="r" src="i5.jpg" alt="Mountains" width="100%" height="250px">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <img src="i4.jpg" alt="Lights" width="100%" height="250px">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="i1.jpg" alt="Nature" width="100%" height="250px">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <img src="i2.jpg" alt="Car" width="100%" height="250px">
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <img id="q" src="i3.jpg" alt="Car" width="100%" height="250px">
+                                        </div>
+                                    </div>
+                                           
+
+                                    <!-- END MAIN -->
+                                </div>
+                            <!-- End Page Container -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="row">
+                    <div class="col-md-7 col-md-offset-4 col-sm-12" >
+                            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                                <div class="mainflip">
+                                    <div class="frontside">
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <p>
+                                                    <img class="img-fluid" src="http://www.franceparebrise.org/site/img/btn-contact.png" alt="card image">
+                                                </p>
+                                                <h2 class="contacter nous"></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    <div class="backside">
+                                        <div class="card col-sm-12 col-lg-12">
+                                            <div class="card-body text-center mt-4">
+                
+                                                <div id="p">
+                                                    <h2>Login</h2>
+                                                    <form id='contact'>
+                                                        <div class="form-group">
+                                                            <label for="first">First Name :</label>
+                                                            <input type="firstname" class="form-control" id="first" placeholder="Enter first name" name="first">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="lastname">Last Name:</label>
+                                                            <input type="lastname" class="form-control" id="lastname" placeholder="Enter last name" name="lastname">
+                                                        </div>
+                
+                                                        <div class="form-group">
+                                                            <label for="email1">Email:</label>
+                                                            <input type="email1" class="form-control" id="email" placeholder="Enter email1" name="email1">
+                                                        </div>
+                
+                                                        <div class="form-group">
+                                                            <label for="message">message:</label>
+                                                            <input type="message" class="form-control" id="message" placeholder="message" name="message">
+                                                        </div>
+                
+                                                        <button onclick='login' type="submit" class="btn btn-default">Submit</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                
+                
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+       
+    </div>
+    </div>
+    </div>
+
+    <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+
+</html>
